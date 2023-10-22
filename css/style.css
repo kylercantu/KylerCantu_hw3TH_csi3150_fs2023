@@ -81,7 +81,7 @@ body {
 }
 
 .down-arrow:hover img {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 /*Slide-two layout*/
@@ -139,11 +139,19 @@ body {
   /* Set position to absolute to put text over image*/
   position: absolute;
   display: flex;
-  align-items: flex-end;
-  bottom: 20%;
+  flex-direction: column;
+  bottom: 10%;
   left: 30px;
   font-size: 1.3rem;
   color: var(--other-color);
+}
+.img-text .image-arrow {
+  width: 50px;
+  height: 50px;
+}
+
+.img-text .image-arrow:hover {
+  transform: scale(0.9);
 }
 
 .tours-gallery-container img {
